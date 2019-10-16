@@ -8,27 +8,13 @@ Note that 1 is not a prime number.
 
 ## Example
 
-What are the prime factors of 60?
+The prime factorization of 5040 is 
 
-- Our first divisor is 2. 2 goes into 60, leaving 30.
-- 2 goes into 30, leaving 15.
-  - 2 doesn't go cleanly into 15. So let's move on to our next divisor, 3.
-- 3 goes cleanly into 15, leaving 5.
-  - 3 does not go cleanly into 5. The next possible factor is 4.
-  - 4 does not go cleanly into 5. The next possible factor is 5.
-- 5 does go cleanly into 5.
-- We're left only with 1, so now, we're done.
+2^4 × 3^2 × 5^1 × 7^1
 
-Our successful divisors in that computation represent the list of prime
-factors of 60: 2, 2, 3, and 5.
-
-You can check this yourself:
-
-- 2 * 2 * 3 * 5
-- = 4 * 15
-- = 60
-- Success!
-
+We want our output to be
+[[2, 4], [3, 2], [5, 1], [7, 1]]
+  
 ## Exception messages
 
 Sometimes it is necessary to raise an exception. When you do this, you should include a meaningful error message to
@@ -36,30 +22,13 @@ indicate what the source of the error is. This makes your code more readable and
 every exercise will require you to raise an exception, but for those that do, the tests will only pass if you include
 a message.
 
-To raise a message with an exception, just write it as an argument to the exception type. For example, instead of
-`raise Exception`, you should write:
+To raise a message with an exception, just write it as an argument to the exception type. For example, you should write:
 
-```python
-raise Exception("Meaningful message indicating the source of the error")
+```julia
+throw(DomainError("Meaningful message indicating the source of the error"))
 ```
 
-## Running the tests
-
-To run the tests, run the appropriate command below ([why they are different](https://github.com/pytest-dev/pytest/issues/1629#issue-161422224)):
-
-- Python 2.7: `py.test prime_factors_test.py`
-- Python 3.4+: `pytest prime_factors_test.py`
-
-Alternatively, you can tell Python to run the pytest module (allowing the same command to be used regardless of Python version):
-`python -m pytest prime_factors_test.py`
-
-### Common `pytest` options
-
-- `-v` : enable verbose output
-- `-x` : stop running tests on first failure
-- `--ff` : run failures from previous test before running other test cases
-
-For other options, see `python -m pytest -h`
+ 
 
 ## Submitting Exercises
 

@@ -32,12 +32,12 @@ throw(DomainError("Meaningful message indicating the source of the error"))
 
 ## Submitting Exercises
 
-Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/python/prime-factors` directory.
+Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/julia/prime-factors` directory.
 
 You can find your Exercism workspace by running `exercism debug` and looking for the line that starts with `Workspace`.
 
 For more detailed information about running tests, code style and linting,
-please see [Running the Tests](http://exercism.io/tracks/python/tests).
+please see [Running the Tests](http://exercism.io/tracks/julia/tests).
 
 ## Source
 

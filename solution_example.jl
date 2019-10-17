@@ -1,7 +1,7 @@
-#-------------------------------------------------------------------------------
-function factorization!(n::Int, primes::Array{Int,1})
-# Returns a sorted list of all divisors of n.
+#------------------------------------------------------------------------------- 
 # Will extend the array of primes if possibly inadequate for factorization
+function factorization!(n::Int, primes::Array{Int,1})
+
     if n  < 1;    throw(DomainError("n must be greater than zero."));    end
     if n == 1;    return []; end
 

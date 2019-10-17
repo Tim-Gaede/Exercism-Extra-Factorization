@@ -1,6 +1,6 @@
 using Test
 
-include("prime_factors.jl")
+include("factorization.jl")
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.0
 

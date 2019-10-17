@@ -1,4 +1,3 @@
-
 #-------------------------------------------------------------------------------
 function factorization!(n::Int, primes::Array{Int,1})
 # Returns a sorted list of all divisors of n.

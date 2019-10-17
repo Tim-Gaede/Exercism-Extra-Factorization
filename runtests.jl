@@ -26,8 +26,8 @@ end
     @test factors!(5040, primes) == [[2, 4], [3, 2], [5, 1], [7, 1]]
 end
 
-@testset "Product of primes" begin
-    @test factors!(901_255, primes) == [[5, 1], [17, 1], [23, 1], [461, 1]]
+@testset "Large power of 2" begin
+    @test factors!(2^50, primes) == [[2, 50]]
 end
 
 @testset "Factors include a large prime" begin

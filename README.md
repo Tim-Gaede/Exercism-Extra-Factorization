@@ -10,7 +10,7 @@ Note that 1 is not a prime number.
 
 The prime factorization of 5040 is 
 
-2^4 × 3^2 × 5^1 × 7^1
+2⁴ × 3² × 5¹ × 7¹
 
 We want our output to be
 [[2, 4], [3, 2], [5, 1], [7, 1]]

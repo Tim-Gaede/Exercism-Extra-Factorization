@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------- 
 # Will extend the array of primes if possibly inadequate for factorization
-function factorization!(n::Int, primes::Array{Int,1})
+function factors!(n::Int, primes::Array{Int,1})
 
     if n  < 1;    throw(DomainError("n must be greater than zero."));    end
     if n == 1;    return []; end

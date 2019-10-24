@@ -1,5 +1,5 @@
 # Will extend the array of primes if possibly inadequate for factorization
-function factoriztion!(n::Int, primes::Array{Int,1})
+function prime_factors!(n::Int, primes::Array{Int,1})
 
 end
 

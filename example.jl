@@ -30,7 +30,7 @@ function factors!(n::Int, primes::Array{Int,1})
             end
             push!(res, [primes[i], pwr])
         end
-        sqrt_rem_down = convert(Int64, floor(√rem)) # Speed up or slow down?
+        sqrt_rem_down = convert(Int64, floor(√rem))
         i += 1
     end
 
